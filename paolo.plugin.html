@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Paolo Coelho Quote Generator</title>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./Scripts/jquery.paolo.js"></script>
+</head>
+<body>
+
+<p class="quote"></p>
+
+<a href="#" class="generatorButton">Generate</a>
+
+<script type="text/javascript">
+
+    function init() {
+        $(".quote").Paolo();
+    }
+
+    $(".generatorButton").click(function () { $(".quote").Paolo("generateQuote"); return false; });
+    $(document).ready(init);
+
+</script>
+
+</body>
+</html>
